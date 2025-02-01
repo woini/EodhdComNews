@@ -1,0 +1,28 @@
+// GlobalImport.pch
+// Created by 01.02.2025.
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#else
+    #ifndef FOUNDATION_EXPORT
+        #if defined(__cplusplus)
+            #define FOUNDATION_EXPORT extern "C"
+        #else
+            #define FOUNDATION_EXPORT extern
+        #endif
+    #endif
+#endif
+
+#ifndef GlobalImport_pch
+#define GlobalImport_pch
+    #import "ECNApp.h"
+
+    #ifdef DEBUG
+        #define dLog(fmt, ...) NSLog((@"'%s' '%d' 'debug' " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+    #else
+        #define dLog(fmt, ...);
+    #endif
+
+    #define className(CLASS) NSStringFromClass([CLASS class])
+#endif

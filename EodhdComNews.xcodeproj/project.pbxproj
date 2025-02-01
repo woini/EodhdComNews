@@ -1,0 +1,621 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA00AFB92D37F09800103A35 /* EodhdComNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CA00AFB72D37F09800103A35 /* EodhdComNews.xcdatamodeld */; };
+		CA060D202CDDED7A00615E76 /* ECNApiManager+Financial.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060D1F2CDDED7A00615E76 /* ECNApiManager+Financial.m */; };
+		CA060D242CDDEE1400615E76 /* ECNNewsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA060D232CDDEE1400615E76 /* ECNNewsRequest.m */; };
+		CA6EDE192CE208D400F2C29B /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6EDE182CE208D400F2C29B /* NSDate+Utilities.m */; };
+		CA6EDE1C2CE212B000F2C29B /* NSDateFormatter+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6EDE1B2CE212B000F2C29B /* NSDateFormatter+Utilities.m */; };
+		CA7243C12CF72C1A00AD095E /* NSManagedObject+Operation.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7243C02CF72C1A00AD095E /* NSManagedObject+Operation.m */; };
+		CA7243C42CF72C5F00AD095E /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA7243C32CF72C5F00AD095E /* CoreDataHelper.m */; };
+		CA74D6F82CDCF2FE00D1F33A /* ECNApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA74D6F72CDCF2FE00D1F33A /* ECNApiManager.m */; };
+		CA8AB2992CDCFF9F002408A3 /* ECNApiManager+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA8AB2982CDCFF9F002408A3 /* ECNApiManager+Helper.m */; };
+		CAA30B192CDCDCF400F91BFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAA30B0B2CDCDCF400F91BFE /* Assets.xcassets */; };
+		CAA30B1D2CDCDCF400F91BFE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA30B102CDCDCF400F91BFE /* main.m */; };
+		CAA30B202CDCDCF400F91BFE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA30B0A2CDCDCF400F91BFE /* AppDelegate.m */; };
+		CAA30B6D2CDCE0BB00F91BFE /* ECNApp.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA30B6C2CDCE0BB00F91BFE /* ECNApp.m */; };
+		CABF3B272D09D111008C7597 /* ECNDetailNewsInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3B1F2D09D111008C7597 /* ECNDetailNewsInteractor.m */; };
+		CABF3B282D09D111008C7597 /* ECNDetailNewsBoundaryModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3B1D2D09D111008C7597 /* ECNDetailNewsBoundaryModels.m */; };
+		CABF3B292D09D111008C7597 /* ECNDetailNewsPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3B212D09D111008C7597 /* ECNDetailNewsPresenter.m */; };
+		CABF3B2A2D09D111008C7597 /* ECNDetailNewsRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3B232D09D111008C7597 /* ECNDetailNewsRouter.m */; };
+		CABF3B2B2D09D111008C7597 /* ECNDetailNewsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CABF3B252D09D111008C7597 /* ECNDetailNewsVC.m */; };
+		CABF3B2C2D09D111008C7597 /* ECNDetailNewsVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CABF3B262D09D111008C7597 /* ECNDetailNewsVC.storyboard */; };
+		CACD0A7C2D4912B8002E2B13 /* ECNModelRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CACD0A7B2D4912B8002E2B13 /* ECNModelRequest.m */; };
+		CAF235922CFDA48D00E0EB51 /* ECNMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF235912CFDA48D00E0EB51 /* ECNMainCell.m */; };
+		CAF235942CFDA55D00E0EB51 /* ECNMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAF235932CFDA55D00E0EB51 /* ECNMainCell.xib */; };
+		CAF235982CFDADA300E0EB51 /* NSDictionary+Mapping.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF235972CFDADA300E0EB51 /* NSDictionary+Mapping.m */; };
+		CAF235A42CFDBF9200E0EB51 /* ECNMainVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAF235A32CFDBF9200E0EB51 /* ECNMainVC.storyboard */; };
+		CAF235A52CFDBF9200E0EB51 /* ECNMainPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF2359E2CFDBF9200E0EB51 /* ECNMainPresenter.m */; };
+		CAF235A62CFDBF9200E0EB51 /* ECNMainBoundaryModels.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF2359A2CFDBF9200E0EB51 /* ECNMainBoundaryModels.m */; };
+		CAF235A72CFDBF9200E0EB51 /* ECNMainVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF235A22CFDBF9200E0EB51 /* ECNMainVC.m */; };
+		CAF235A82CFDBF9200E0EB51 /* ECNMainRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF235A02CFDBF9200E0EB51 /* ECNMainRouter.m */; };
+		CAF235A92CFDBF9200E0EB51 /* ECNMainInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = CAF2359C2CFDBF9200E0EB51 /* ECNMainInteractor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CA00AFB82D37F09800103A35 /* Test69CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Test69CoreData.xcdatamodel; sourceTree = "<group>"; };
+		CA060D1E2CDDED7A00615E76 /* ECNApiManager+Financial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECNApiManager+Financial.h"; sourceTree = "<group>"; };
+		CA060D1F2CDDED7A00615E76 /* ECNApiManager+Financial.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ECNApiManager+Financial.m"; sourceTree = "<group>"; };
+		CA060D222CDDEE1400615E76 /* ECNNewsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNNewsRequest.h; sourceTree = "<group>"; };
+		CA060D232CDDEE1400615E76 /* ECNNewsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNNewsRequest.m; sourceTree = "<group>"; };
+		CA6EDE172CE208D400F2C29B /* NSDate+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		CA6EDE182CE208D400F2C29B /* NSDate+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		CA6EDE1A2CE212B000F2C29B /* NSDateFormatter+Utilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Utilities.h"; sourceTree = "<group>"; };
+		CA6EDE1B2CE212B000F2C29B /* NSDateFormatter+Utilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Utilities.m"; sourceTree = "<group>"; };
+		CA7243BF2CF72C1A00AD095E /* NSManagedObject+Operation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSManagedObject+Operation.h"; sourceTree = "<group>"; };
+		CA7243C02CF72C1A00AD095E /* NSManagedObject+Operation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObject+Operation.m"; sourceTree = "<group>"; };
+		CA7243C22CF72C5F00AD095E /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		CA7243C32CF72C5F00AD095E /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		CA74D69F2CDCEB5B00D1F33A /* GlobalImport.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalImport.pch; sourceTree = "<group>"; };
+		CA74D6F32CDCF0B000D1F33A /* ECNNewResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNNewResponse.h; sourceTree = "<group>"; };
+		CA74D6F62CDCF2FE00D1F33A /* ECNApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNApiManager.h; sourceTree = "<group>"; };
+		CA74D6F72CDCF2FE00D1F33A /* ECNApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNApiManager.m; sourceTree = "<group>"; };
+		CA8AB2962CDCFEEE002408A3 /* ECNApiManagerClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNApiManagerClass.h; sourceTree = "<group>"; };
+		CA8AB2972CDCFF9F002408A3 /* ECNApiManager+Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ECNApiManager+Helper.h"; sourceTree = "<group>"; };
+		CA8AB2982CDCFF9F002408A3 /* ECNApiManager+Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ECNApiManager+Helper.m"; sourceTree = "<group>"; };
+		CAA30AE92CDCDCD300F91BFE /* EodhdComNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EodhdComNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAA30B092CDCDCF400F91BFE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CAA30B0A2CDCDCF400F91BFE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CAA30B0B2CDCDCF400F91BFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CAA30B0D2CDCDCF400F91BFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAA30B102CDCDCF400F91BFE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CAA30B6B2CDCE0BB00F91BFE /* ECNApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNApp.h; sourceTree = "<group>"; };
+		CAA30B6C2CDCE0BB00F91BFE /* ECNApp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNApp.m; sourceTree = "<group>"; };
+		CABF3B1C2D09D111008C7597 /* ECNDetailNewsBoundaryModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNDetailNewsBoundaryModels.h; sourceTree = "<group>"; };
+		CABF3B1D2D09D111008C7597 /* ECNDetailNewsBoundaryModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNDetailNewsBoundaryModels.m; sourceTree = "<group>"; };
+		CABF3B1E2D09D111008C7597 /* ECNDetailNewsInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNDetailNewsInteractor.h; sourceTree = "<group>"; };
+		CABF3B1F2D09D111008C7597 /* ECNDetailNewsInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNDetailNewsInteractor.m; sourceTree = "<group>"; };
+		CABF3B202D09D111008C7597 /* ECNDetailNewsPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNDetailNewsPresenter.h; sourceTree = "<group>"; };
+		CABF3B212D09D111008C7597 /* ECNDetailNewsPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNDetailNewsPresenter.m; sourceTree = "<group>"; };
+		CABF3B222D09D111008C7597 /* ECNDetailNewsRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNDetailNewsRouter.h; sourceTree = "<group>"; };
+		CABF3B232D09D111008C7597 /* ECNDetailNewsRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNDetailNewsRouter.m; sourceTree = "<group>"; };
+		CABF3B242D09D111008C7597 /* ECNDetailNewsVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNDetailNewsVC.h; sourceTree = "<group>"; };
+		CABF3B252D09D111008C7597 /* ECNDetailNewsVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNDetailNewsVC.m; sourceTree = "<group>"; };
+		CABF3B262D09D111008C7597 /* ECNDetailNewsVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ECNDetailNewsVC.storyboard; sourceTree = "<group>"; };
+		CACD0A7A2D4912B8002E2B13 /* ECNModelRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNModelRequest.h; sourceTree = "<group>"; };
+		CACD0A7B2D4912B8002E2B13 /* ECNModelRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNModelRequest.m; sourceTree = "<group>"; };
+		CAF235902CFDA48D00E0EB51 /* ECNMainCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainCell.h; sourceTree = "<group>"; };
+		CAF235912CFDA48D00E0EB51 /* ECNMainCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainCell.m; sourceTree = "<group>"; };
+		CAF235932CFDA55D00E0EB51 /* ECNMainCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ECNMainCell.xib; sourceTree = "<group>"; };
+		CAF235952CFDA90400E0EB51 /* ECNNewSentimentResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNNewSentimentResponse.h; sourceTree = "<group>"; };
+		CAF235962CFDADA300E0EB51 /* NSDictionary+Mapping.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Mapping.h"; sourceTree = "<group>"; };
+		CAF235972CFDADA300E0EB51 /* NSDictionary+Mapping.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Mapping.m"; sourceTree = "<group>"; };
+		CAF235992CFDBF9200E0EB51 /* ECNMainBoundaryModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainBoundaryModels.h; sourceTree = "<group>"; };
+		CAF2359A2CFDBF9200E0EB51 /* ECNMainBoundaryModels.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainBoundaryModels.m; sourceTree = "<group>"; };
+		CAF2359B2CFDBF9200E0EB51 /* ECNMainInteractor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainInteractor.h; sourceTree = "<group>"; };
+		CAF2359C2CFDBF9200E0EB51 /* ECNMainInteractor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainInteractor.m; sourceTree = "<group>"; };
+		CAF2359D2CFDBF9200E0EB51 /* ECNMainPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainPresenter.h; sourceTree = "<group>"; };
+		CAF2359E2CFDBF9200E0EB51 /* ECNMainPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainPresenter.m; sourceTree = "<group>"; };
+		CAF2359F2CFDBF9200E0EB51 /* ECNMainRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainRouter.h; sourceTree = "<group>"; };
+		CAF235A02CFDBF9200E0EB51 /* ECNMainRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainRouter.m; sourceTree = "<group>"; };
+		CAF235A12CFDBF9200E0EB51 /* ECNMainVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECNMainVC.h; sourceTree = "<group>"; };
+		CAF235A22CFDBF9200E0EB51 /* ECNMainVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECNMainVC.m; sourceTree = "<group>"; };
+		CAF235A32CFDBF9200E0EB51 /* ECNMainVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ECNMainVC.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAA30AE62CDCDCD300F91BFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CA060D332CDE09D400615E76 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				CAF2358F2CFDA47300E0EB51 /* view */,
+				CAF235992CFDBF9200E0EB51 /* ECNMainBoundaryModels.h */,
+				CAF2359A2CFDBF9200E0EB51 /* ECNMainBoundaryModels.m */,
+				CAF2359B2CFDBF9200E0EB51 /* ECNMainInteractor.h */,
+				CAF2359C2CFDBF9200E0EB51 /* ECNMainInteractor.m */,
+				CAF2359D2CFDBF9200E0EB51 /* ECNMainPresenter.h */,
+				CAF2359E2CFDBF9200E0EB51 /* ECNMainPresenter.m */,
+				CAF2359F2CFDBF9200E0EB51 /* ECNMainRouter.h */,
+				CAF235A02CFDBF9200E0EB51 /* ECNMainRouter.m */,
+				CAF235A12CFDBF9200E0EB51 /* ECNMainVC.h */,
+				CAF235A22CFDBF9200E0EB51 /* ECNMainVC.m */,
+				CAF235A32CFDBF9200E0EB51 /* ECNMainVC.storyboard */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		CA060D4D2CDE1CA400615E76 /* detailNews */ = {
+			isa = PBXGroup;
+			children = (
+				CABF3B1C2D09D111008C7597 /* ECNDetailNewsBoundaryModels.h */,
+				CABF3B1D2D09D111008C7597 /* ECNDetailNewsBoundaryModels.m */,
+				CABF3B1E2D09D111008C7597 /* ECNDetailNewsInteractor.h */,
+				CABF3B1F2D09D111008C7597 /* ECNDetailNewsInteractor.m */,
+				CABF3B202D09D111008C7597 /* ECNDetailNewsPresenter.h */,
+				CABF3B212D09D111008C7597 /* ECNDetailNewsPresenter.m */,
+				CABF3B222D09D111008C7597 /* ECNDetailNewsRouter.h */,
+				CABF3B232D09D111008C7597 /* ECNDetailNewsRouter.m */,
+				CABF3B242D09D111008C7597 /* ECNDetailNewsVC.h */,
+				CABF3B252D09D111008C7597 /* ECNDetailNewsVC.m */,
+				CABF3B262D09D111008C7597 /* ECNDetailNewsVC.storyboard */,
+			);
+			path = detailNews;
+			sourceTree = "<group>";
+		};
+		CA060D672CDE69B400615E76 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				CA6EDE172CE208D400F2C29B /* NSDate+Utilities.h */,
+				CA6EDE182CE208D400F2C29B /* NSDate+Utilities.m */,
+				CA6EDE1A2CE212B000F2C29B /* NSDateFormatter+Utilities.h */,
+				CA6EDE1B2CE212B000F2C29B /* NSDateFormatter+Utilities.m */,
+				CAF235962CFDADA300E0EB51 /* NSDictionary+Mapping.h */,
+				CAF235972CFDADA300E0EB51 /* NSDictionary+Mapping.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		CA060D6B2CDE69D500615E76 /* screen */ = {
+			isa = PBXGroup;
+			children = (
+				CA060D4D2CDE1CA400615E76 /* detailNews */,
+				CA060D332CDE09D400615E76 /* main */,
+			);
+			path = screen;
+			sourceTree = "<group>";
+		};
+		CA74D69E2CDCEB4000D1F33A /* data */ = {
+			isa = PBXGroup;
+			children = (
+				CAA30B252CDCE01700F91BFE /* coredata */,
+				CA74D69F2CDCEB5B00D1F33A /* GlobalImport.pch */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		CA74D6E82CDCEF3900D1F33A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CACD0A7A2D4912B8002E2B13 /* ECNModelRequest.h */,
+				CACD0A7B2D4912B8002E2B13 /* ECNModelRequest.m */,
+				CA74D6F22CDCF09A00D1F33A /* news */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CA74D6F22CDCF09A00D1F33A /* news */ = {
+			isa = PBXGroup;
+			children = (
+				CA74D6F32CDCF0B000D1F33A /* ECNNewResponse.h */,
+				CAF235952CFDA90400E0EB51 /* ECNNewSentimentResponse.h */,
+				CA060D222CDDEE1400615E76 /* ECNNewsRequest.h */,
+				CA060D232CDDEE1400615E76 /* ECNNewsRequest.m */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		CA74D6FF2CDCF6C200D1F33A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				CA060D672CDE69B400615E76 /* category */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		CAA30AE02CDCDCD300F91BFE = {
+			isa = PBXGroup;
+			children = (
+				CAA30B172CDCDCF400F91BFE /* EodhdComNews */,
+				CAA30AEA2CDCDCD300F91BFE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAA30AEA2CDCDCD300F91BFE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAA30AE92CDCDCD300F91BFE /* EodhdComNews.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAA30B172CDCDCF400F91BFE /* EodhdComNews */ = {
+			isa = PBXGroup;
+			children = (
+				CA74D6FF2CDCF6C200D1F33A /* common */,
+				CA74D69E2CDCEB4000D1F33A /* data */,
+				CAA30B242CDCDF9100F91BFE /* api */,
+				CAA30B232CDCDE8400F91BFE /* ui */,
+				CAA30B222CDCDE7000F91BFE /* app */,
+				CAA30B0B2CDCDCF400F91BFE /* Assets.xcassets */,
+				CAA30B0D2CDCDCF400F91BFE /* Info.plist */,
+				CAA30B102CDCDCF400F91BFE /* main.m */,
+			);
+			path = EodhdComNews;
+			sourceTree = "<group>";
+		};
+		CAA30B222CDCDE7000F91BFE /* app */ = {
+			isa = PBXGroup;
+			children = (
+				CAA30B092CDCDCF400F91BFE /* AppDelegate.h */,
+				CAA30B0A2CDCDCF400F91BFE /* AppDelegate.m */,
+				CAA30B6B2CDCE0BB00F91BFE /* ECNApp.h */,
+				CAA30B6C2CDCE0BB00F91BFE /* ECNApp.m */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		CAA30B232CDCDE8400F91BFE /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				CA060D6B2CDE69D500615E76 /* screen */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		CAA30B242CDCDF9100F91BFE /* api */ = {
+			isa = PBXGroup;
+			children = (
+				CA74D6F62CDCF2FE00D1F33A /* ECNApiManager.h */,
+				CA74D6F72CDCF2FE00D1F33A /* ECNApiManager.m */,
+				CA060D1E2CDDED7A00615E76 /* ECNApiManager+Financial.h */,
+				CA060D1F2CDDED7A00615E76 /* ECNApiManager+Financial.m */,
+				CA8AB2972CDCFF9F002408A3 /* ECNApiManager+Helper.h */,
+				CA8AB2982CDCFF9F002408A3 /* ECNApiManager+Helper.m */,
+				CA8AB2962CDCFEEE002408A3 /* ECNApiManagerClass.h */,
+				CA74D6E82CDCEF3900D1F33A /* model */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		CAA30B252CDCE01700F91BFE /* coredata */ = {
+			isa = PBXGroup;
+			children = (
+				CA00AFB72D37F09800103A35 /* EodhdComNews.xcdatamodeld */,
+				CA7243BF2CF72C1A00AD095E /* NSManagedObject+Operation.h */,
+				CA7243C02CF72C1A00AD095E /* NSManagedObject+Operation.m */,
+				CA7243C22CF72C5F00AD095E /* CoreDataHelper.h */,
+				CA7243C32CF72C5F00AD095E /* CoreDataHelper.m */,
+			);
+			path = coredata;
+			sourceTree = "<group>";
+		};
+		CAF2358F2CFDA47300E0EB51 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CAF235902CFDA48D00E0EB51 /* ECNMainCell.h */,
+				CAF235912CFDA48D00E0EB51 /* ECNMainCell.m */,
+				CAF235932CFDA55D00E0EB51 /* ECNMainCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAA30AE82CDCDCD300F91BFE /* EodhdComNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAA30B042CDCDCD600F91BFE /* Build configuration list for PBXNativeTarget "EodhdComNews" */;
+			buildPhases = (
+				CAA30AE52CDCDCD300F91BFE /* Sources */,
+				CAA30AE62CDCDCD300F91BFE /* Frameworks */,
+				CAA30AE72CDCDCD300F91BFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EodhdComNews;
+			packageProductDependencies = (
+			);
+			productName = EodhdComNews;
+			productReference = CAA30AE92CDCDCD300F91BFE /* EodhdComNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAA30AE12CDCDCD300F91BFE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1610;
+				TargetAttributes = {
+					CAA30AE82CDCDCD300F91BFE = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = CAA30AE42CDCDCD300F91BFE /* Build configuration list for PBXProject "EodhdComNews" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAA30AE02CDCDCD300F91BFE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = CAA30AEA2CDCDCD300F91BFE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAA30AE82CDCDCD300F91BFE /* EodhdComNews */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAA30AE72CDCDCD300F91BFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CABF3B2C2D09D111008C7597 /* ECNDetailNewsVC.storyboard in Resources */,
+				CAA30B192CDCDCF400F91BFE /* Assets.xcassets in Resources */,
+				CAF235942CFDA55D00E0EB51 /* ECNMainCell.xib in Resources */,
+				CAF235A42CFDBF9200E0EB51 /* ECNMainVC.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAA30AE52CDCDCD300F91BFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAA30B1D2CDCDCF400F91BFE /* main.m in Sources */,
+				CA74D6F82CDCF2FE00D1F33A /* ECNApiManager.m in Sources */,
+				CAA30B6D2CDCE0BB00F91BFE /* ECNApp.m in Sources */,
+				CA060D202CDDED7A00615E76 /* ECNApiManager+Financial.m in Sources */,
+				CA8AB2992CDCFF9F002408A3 /* ECNApiManager+Helper.m in Sources */,
+				CA6EDE1C2CE212B000F2C29B /* NSDateFormatter+Utilities.m in Sources */,
+				CAA30B202CDCDCF400F91BFE /* AppDelegate.m in Sources */,
+				CA7243C42CF72C5F00AD095E /* CoreDataHelper.m in Sources */,
+				CA7243C12CF72C1A00AD095E /* NSManagedObject+Operation.m in Sources */,
+				CAF235A52CFDBF9200E0EB51 /* ECNMainPresenter.m in Sources */,
+				CAF235A62CFDBF9200E0EB51 /* ECNMainBoundaryModels.m in Sources */,
+				CAF235A72CFDBF9200E0EB51 /* ECNMainVC.m in Sources */,
+				CAF235A82CFDBF9200E0EB51 /* ECNMainRouter.m in Sources */,
+				CAF235A92CFDBF9200E0EB51 /* ECNMainInteractor.m in Sources */,
+				CA00AFB92D37F09800103A35 /* EodhdComNews.xcdatamodeld in Sources */,
+				CA6EDE192CE208D400F2C29B /* NSDate+Utilities.m in Sources */,
+				CA060D242CDDEE1400615E76 /* ECNNewsRequest.m in Sources */,
+				CABF3B272D09D111008C7597 /* ECNDetailNewsInteractor.m in Sources */,
+				CABF3B282D09D111008C7597 /* ECNDetailNewsBoundaryModels.m in Sources */,
+				CACD0A7C2D4912B8002E2B13 /* ECNModelRequest.m in Sources */,
+				CABF3B292D09D111008C7597 /* ECNDetailNewsPresenter.m in Sources */,
+				CABF3B2A2D09D111008C7597 /* ECNDetailNewsRouter.m in Sources */,
+				CABF3B2B2D09D111008C7597 /* ECNDetailNewsVC.m in Sources */,
+				CAF235982CFDADA300E0EB51 /* NSDictionary+Mapping.m in Sources */,
+				CAF235922CFDA48D00E0EB51 /* ECNMainCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CAA30B052CDCDCD600F91BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48HC6J2CM3;
+				GCC_PREFIX_HEADER = EodhdComNews/data/GlobalImport.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EodhdComNews/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ECNMainVC;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtest.eodhdnews.EodhdComNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Debug;
+		};
+		CAA30B062CDCDCD600F91BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 48HC6J2CM3;
+				GCC_PREFIX_HEADER = EodhdComNews/data/GlobalImport.pch;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EodhdComNews/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = ECNMainVC;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bigtest.eodhdnews.EodhdComNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TVOS_DEPLOYMENT_TARGET = "";
+			};
+			name = Release;
+		};
+		CAA30B072CDCDCD600F91BFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CAA30B082CDCDCD600F91BFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = "";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAA30AE42CDCDCD300F91BFE /* Build configuration list for PBXProject "EodhdComNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA30B072CDCDCD600F91BFE /* Debug */,
+				CAA30B082CDCDCD600F91BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAA30B042CDCDCD600F91BFE /* Build configuration list for PBXNativeTarget "EodhdComNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAA30B052CDCDCD600F91BFE /* Debug */,
+				CAA30B062CDCDCD600F91BFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CA00AFB72D37F09800103A35 /* EodhdComNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CA00AFB82D37F09800103A35 /* Test69CoreData.xcdatamodel */,
+			);
+			currentVersion = CA00AFB82D37F09800103A35 /* Test69CoreData.xcdatamodel */;
+			path = EodhdComNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CAA30AE12CDCDCD300F91BFE /* Project object */;
+}

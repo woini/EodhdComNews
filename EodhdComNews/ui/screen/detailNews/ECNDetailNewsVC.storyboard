@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="aB0-U2-m3h">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail NewsVC-->
+        <scene sceneID="QgD-u9-2zT">
+            <objects>
+                <viewController storyboardIdentifier="ECNDetailNewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="aB0-U2-m3h" customClass="ECNDetailNewsVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eod-hb-rb2"/>
+                        <viewControllerLayoutGuide type="bottom" id="X6I-BV-3ly"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rvo-0N-Oas">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1050"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SRY-ws-RUI">
+                                <rect key="frame" x="0.0" y="47" width="375" height="969"/>
+                                <subviews>
+                                    <stackView opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Tn3-5b-vQ2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="22"/>
+                                        <subviews>
+                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTu-ST-3nu">
+                                                <rect key="frame" x="16" y="0.0" width="343" height="0.0"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PK7-im-oji">
+                                                <rect key="frame" x="16" y="8" width="343" height="14"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="800" constant="1" id="fDZ-qm-Vva"/>
+                                                </constraints>
+                                                <color key="tintColor" systemColor="linkColor"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal">
+                                                    <string key="title">https://finance.yahoo.com/news/ltimindtree-delivers-1-8-qoq-141100557.html https://finance.yahoo.com/news/ltimindtree-delivers-1-8-qoq-141100557.html</string>
+                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                </state>
+                                                <buttonConfiguration key="configuration" style="gray">
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="abLink:" destination="aB0-U2-m3h" eventType="touchUpInside" id="EGd-JM-omB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="NTu-ST-3nu" secondAttribute="trailing" priority="799" constant="16" id="2BJ-Zj-axi"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" priority="100" constant="1" id="T8a-qx-bA0"/>
+                                            <constraint firstItem="PK7-im-oji" firstAttribute="leading" secondItem="Tn3-5b-vQ2" secondAttribute="leading" priority="799" constant="16" id="bvU-dM-iSn"/>
+                                            <constraint firstAttribute="trailing" secondItem="PK7-im-oji" secondAttribute="trailing" priority="799" constant="16" id="eiK-MA-iD7"/>
+                                            <constraint firstItem="PK7-im-oji" firstAttribute="centerX" secondItem="Tn3-5b-vQ2" secondAttribute="centerX" priority="800" id="i7S-aO-JS1"/>
+                                            <constraint firstItem="NTu-ST-3nu" firstAttribute="leading" secondItem="Tn3-5b-vQ2" secondAttribute="leading" priority="799" constant="16" id="mQs-Ne-K7y"/>
+                                            <constraint firstItem="NTu-ST-3nu" firstAttribute="centerX" secondItem="Tn3-5b-vQ2" secondAttribute="centerX" priority="15" id="qxW-w4-C5K"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Tn3-5b-vQ2" firstAttribute="top" secondItem="SRY-ws-RUI" secondAttribute="top" priority="800" id="FrE-cv-UnY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tn3-5b-vQ2" secondAttribute="trailing" priority="800" id="P1D-t5-O1G"/>
+                                    <constraint firstAttribute="bottom" secondItem="Tn3-5b-vQ2" secondAttribute="bottom" priority="800" id="ShZ-P8-ogo"/>
+                                    <constraint firstItem="Tn3-5b-vQ2" firstAttribute="width" secondItem="SRY-ws-RUI" secondAttribute="width" priority="900" id="VSl-qd-NY0"/>
+                                    <constraint firstItem="Tn3-5b-vQ2" firstAttribute="leading" secondItem="SRY-ws-RUI" secondAttribute="leading" priority="800" id="sXU-mk-MDs"/>
+                                    <constraint firstItem="Tn3-5b-vQ2" firstAttribute="centerX" secondItem="SRY-ws-RUI" secondAttribute="centerX" priority="100" id="wpU-kr-Ldq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Tn3-5b-vQ2" secondAttribute="trailing" priority="800" id="1bV-t3-T44"/>
+                            <constraint firstItem="SRY-ws-RUI" firstAttribute="leading" secondItem="rvo-0N-Oas" secondAttribute="leading" id="RFc-YD-Hqb"/>
+                            <constraint firstItem="Tn3-5b-vQ2" firstAttribute="leading" secondItem="rvo-0N-Oas" secondAttribute="leading" priority="800" id="ROr-5C-hSf"/>
+                            <constraint firstItem="SRY-ws-RUI" firstAttribute="top" secondItem="eod-hb-rb2" secondAttribute="bottom" priority="800" id="X6S-Qu-xiQ"/>
+                            <constraint firstItem="X6I-BV-3ly" firstAttribute="top" secondItem="SRY-ws-RUI" secondAttribute="bottom" priority="800" id="lYJ-pH-BOq"/>
+                            <constraint firstAttribute="trailing" secondItem="SRY-ws-RUI" secondAttribute="trailing" id="nEi-lq-S65"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="1050"/>
+                    <connections>
+                        <outlet property="obLink" destination="PK7-im-oji" id="qO1-nN-Ov8"/>
+                        <outlet property="olContent" destination="NTu-ST-3nu" id="XY5-4L-H1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXS-uy-S93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311.19999999999999" y="-110.64467766116942"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

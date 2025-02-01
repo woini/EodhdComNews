@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="23507" systemVersion="24A335" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="ECNNewResponse" representedClassName="ECNNewResponse" syncable="YES" codeGenerationType="class">
+        <attribute name="content" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dateTitleHash" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="link" optional="YES" attributeType="String"/>
+        <attribute name="symbols" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="NSArray"/>
+        <attribute name="tags" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="NSArray"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="sentiment" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ECNNewSentimentResponse" inverseName="eodhdNews" inverseEntity="ECNNewSentimentResponse"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="dateTitleHash"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ECNNewSentimentResponse" representedClassName="ECNNewSentimentResponse" syncable="YES" codeGenerationType="class">
+        <attribute name="neg" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="neu" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="polarity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="pos" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <relationship name="eodhdNews" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ECNNewResponse" inverseName="sentiment" inverseEntity="ECNNewResponse"/>
+    </entity>
+</model>
